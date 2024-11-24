@@ -1,0 +1,138 @@
+html {
+  background-color: #205295;
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+  text-align: center;
+}
+
+/* h1{
+  font-size: 500%;
+  color: #E9F8F9;
+  padding: 2%;
+} */
+
+/*                    heading glow             */
+
+body {
+  background: #205295;
+  font-family: "Kalam", Helvetica, Arial, sans205295;
+  font-weight: 600;
+}
+
+h1 {
+  text-transfrom: uppercase;
+  color: #0A2647;
+  font-size: 7em;
+  text-align: center;
+  animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px rgba(255, 255, 255, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 60px rgba(66, 220, 219, 0.8), 0 0 80px rgba(66, 220, 219, 0.5), 0 0 100px rgba(66, 220, 219, 0.5), 0 0 140px rgba(66, 220, 219, 0.5), 0 0 200px rgba(66, 220, 219, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(66, 220, 219, 0.8), 0 0 30px rgba(66, 220, 219, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 50px rgba(66, 220, 219, 0.5), 0 0 80px rgba(66, 220, 219, 0.5);
+  }
+}
+
+.box {
+  width: 40%;
+  margin: auto;
+  background: #0A2647;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  color: white;
+}
+
+
+/*                  input        */
+
+.input{
+  padding: 20px ;
+}
+
+
+/*                           button                   */
+
+button {
+  background: #A3C7D6;
+  background-image: -webkit-linear-gradient(top, #A3C7D6, #A3C7D6);
+  background-image: -moz-linear-gradient(top, #A3C7D6, #A3C7D6);
+  background-image: -ms-linear-gradient(top, #A3C7D6, #A3C7D6);
+  background-image: -o-linear-gradient(top, #A3C7D6, #A3C7D6);
+  background-image: linear-gradient(to bottom, #A3C7D6, #A3C7D6);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #A3C7D6;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  border: solid #1f628d 0px;
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+
+
+/*                           input box                  */
+label {
+        display: block;
+        margin: 20px;
+        overflow: auto;
+        font-family: sans-serif;
+        font-size: 10px;
+        color: #444;
+        text-shadow: 0 0 2px #000;
+        padding: 20px 10px 10px 0;
+      }
+      .inputTask {
+        width: 275px;
+        height: 20px;
+        border: 2px solid #aeaeb5;
+        border-radius: 6px;
+        font-size: 20px;
+        padding: 5px;
+        margin-top: -10px;
+      }
+      .inputTask:focus {
+        outline: none;
+        border-color: #E5B8F4;
+        box-shadow: 0 0 10px #E5B8F4;
+      }
+
+      /*                     list glow               */
+
+      .container{
+        padding-top: 10px;
+      }
+
+      /*          adding check box          */
+      .checkdiv{
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        font-style: "Kalam";
+        font-size: 25px;
+        padding-right: 10px;
+      }
+      .checkdiv:first-child{
+        padding-top: 10px;
+      }
+      .notChecked{
+        width: 20px;
+        height: 20px;
+      }
+
+      /*               checked            */
+      .checked{
+        text-decoration: line-through;
+        text-decoration-color: #7D9D9C;
+      }
